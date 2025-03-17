@@ -1,0 +1,9 @@
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":30,"version":"5.111.0","msg":"Ghost is running in production...","time":"2025-03-13T09:25:32.808Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":30,"version":"5.111.0","msg":"Your site is now available on http://localhost:2368/","time":"2025-03-13T09:25:32.809Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":30,"version":"5.111.0","msg":"Ctrl+C to shut down","time":"2025-03-13T09:25:32.809Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":30,"version":"5.111.0","msg":"Ghost server started in 1.042s","time":"2025-03-13T09:25:32.809Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":50,"version":"5.111.0","err":{"id":500,"domain":"http://localhost:2368","code":"ECONNREFUSED","name":"DatabaseError","statusCode":500,"level":"critical","message":"connect ECONNREFUSED 127.0.0.1:3306","help":"\"Unknown database error\"","stack":"Error: connect ECONNREFUSED 127.0.0.1:3306\n    at C:\\Users\\Pc\\Desktop\\SD-Projects\\Ghost\\versions\\5.111.0\\node_modules\\knex-migrator\\lib\\database.js:57:19\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1495:16)","hideStack":false},"msg":"connect ECONNREFUSED 127.0.0.1:3306","time":"2025-03-13T09:25:33.285Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":40,"version":"5.111.0","msg":"Ghost is shutting down","time":"2025-03-13T09:25:33.286Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":40,"version":"5.111.0","msg":"Ghost has shut down","time":"2025-03-13T09:25:33.287Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":40,"version":"5.111.0","msg":"Your site is now offline","time":"2025-03-13T09:25:33.287Z","v":0}
+{"name":"Log","hostname":"Gentrittttt","pid":15248,"level":40,"version":"5.111.0","msg":"Ghost was running for a few seconds","time":"2025-03-13T09:25:33.288Z","v":0}
