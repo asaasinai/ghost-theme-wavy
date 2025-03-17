@@ -1,0 +1,37 @@
+name: Ghost App Deployment
+
+on:
+  push:
+    branches:
+      - main  # Trigger only on push to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Optionally, run any Ghost-specific setup (e.g., migrations)
+      - name: Run Migrations
+        run: npm run migrate
+
+      # (Optional) If your Ghost app requires building assets, replace the following with your custom build command.
+      -  name: Build Assets
+         run: npm run build
+
+      # Deploy to Vercel
+      - name: Deploy to Vercel
+        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes --name "ghost-app"
