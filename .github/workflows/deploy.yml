@@ -20,12 +20,12 @@ jobs:
 
       # Install dependencies from the current version folder
       - name: Install Dependencies (Current)
-        working-directory: ghost-app/current
+        working-directory: current
         run: npm install
 
       # (Optional) Build the app if necessary
       - name: Build App (Current)
-        working-directory: ghost-app/current
+        working-directory: current
         run: npm run build
 
       # Deploy to Vercel using the current folder
