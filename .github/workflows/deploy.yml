@@ -22,10 +22,10 @@ jobs:
         working-directory: current
         run: npm install --legacy-peer-deps
 
-      # (Optional) If you have a build step for your Ghost app, include it:
-      # - name: Build App
-      #   working-directory: current
-      #   run: npm run build
+      # (Optional) If your Ghost app requires a build step, include it:
+      - name: Build App
+        working-directory: current
+        run: npm run build
 
       - name: Deploy to Vercel
         run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes --name "ghost-app"
