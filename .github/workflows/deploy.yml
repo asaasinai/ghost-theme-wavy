@@ -18,16 +18,14 @@ jobs:
         with:
           node-version: 20
 
-      # Install dependencies from the current version folder
       - name: Install Dependencies (Current)
         working-directory: current
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      # (Optional) Build the app if necessary
-      - name: Build App (Current)
-        working-directory: current
-        run: npm run build
+      # (Optional) If you have a build step for your Ghost app, include it:
+      # - name: Build App
+      #   working-directory: current
+      #   run: npm run build
 
-      # Deploy to Vercel using the current folder
       - name: Deploy to Vercel
-        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes --name "ghost-app-current"
+        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes --name "ghost-app"
