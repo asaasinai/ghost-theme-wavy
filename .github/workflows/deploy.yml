@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies (Current)
         working-directory: current
-        run: npm install --legacy-peer-deps
+        run: ghost install
 
       # Build asset files
       - name: Build Assets
