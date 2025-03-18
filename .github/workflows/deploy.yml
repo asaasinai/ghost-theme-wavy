@@ -21,9 +21,9 @@ jobs:
       - name: Install Ghost CLI
         run: npm install -g ghost-cli
 
-      # - name: Install Dependencies (Current)
-      #   working-directory: current
-      #   run: ghost install
+      - name: Install Dependencies (Current)
+        working-directory: current
+        run: npm install
 
       # Build asset files
       - name: Build Assets
