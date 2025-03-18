@@ -18,12 +18,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Ghost CLI
-        run: npm install -g ghost-cli
+      # - name: Install Ghost CLI
+      #   run: npm install -g ghost-cli
 
-      - name: Install Dependencies (Current)
-        working-directory: current
-        run: ghost install
+      # - name: Install Dependencies (Current)
+      #   working-directory: current
+      #   run: ghost install
 
       # Build asset files
       - name: Build Assets
