@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Dependencies (Current)
         working-directory: current
-        run: npm install --legacy-peer-deps
+        run: npm install --force
 
       # Build asset files
       - name: Build Assets
